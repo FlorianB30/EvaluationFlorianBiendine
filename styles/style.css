@@ -1,0 +1,124 @@
+body { 
+	margin: 0; 
+	padding: 0; 
+	border: 0; 
+}
+
+section { 
+	min-height: 100vh; 
+}
+
+
+.DivNth:nth-of-type(2n+1) { 
+	background-color: #1abc9c;  /* 1abc9c */
+  width:45%;
+}
+
+.DivNth:nth-of-type(2n+2) {
+  background-color: #3498db; /* 3498db */
+  width:45%;
+}
+
+.DivNth:nth-of-type(2n+3) {
+  background-color: black;
+  width:100%;
+}
+
+section{
+  display:flex;
+  flex-wrap:wrap;
+  width:95%;
+  margin-left:auto;
+  margin-right:auto;
+  justify-content:space-between;
+  align-items:center;
+  align-content:center;
+}
+
+section .DivNth{
+  height:400px;
+  margin-bottom:10px;
+  margin-top:10px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius: 10px;
+}
+
+/* Menu */
+
+.Menu {
+  background: linear-gradient(orange, green);
+  position: fixed;
+  margin: 0px;
+  padding: 6px;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Images */
+/*
+.DivImages {
+  width: 490px;
+  overflow: auto;
+}
+
+.images {
+  display: flex;
+  max-width: 100%; 
+}
+
+.images img {
+  max-width: 100%;
+} */
+
+/* Accordéon */
+
+.accordion {
+  width: 100%;
+}
+
+/* Caroussel */
+
+.conteneur {
+    height: 500px;
+    width: 50%;
+}
+
+.conteneur img {
+  max-width: 100%;
+  max-height: 300px;
+}
+
+/* Formulaire */
+
+form div {
+  margin-left: 5%;
+}
+
+/* Responsive */
+
+@media screen and (min-width: 530px) {
+
+  .navbar,
+  .navbar-dark,
+  .bg-dark,
+  .collapse,
+  #menumobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .navbar-dark{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  .Menu {
+    display: none;
+  }
+
+}
